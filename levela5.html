@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Edukasi Pancasila Level 5</title>
+    <link rel="stylesheet" href="style/pl5.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container ">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Game Edukasi Pancasila - Mencocokan Sila Level 5</h1>
+        <p>Ikuti instruksi di bawah ini untuk menyelesaikan semua tugas:</p>
+
+        <!-- Drag and Drop Section -->
+        <div class="section">
+            <h2>Cocokkan Nama Sila dengan Deskripsinya:</h2>
+            <div class="game-container">
+                <div class="items">
+                    <div draggable="true" class="item" data-sila="1">Ketuhanan yang Maha Esa</div>
+                    <div draggable="true" class="item" data-sila="2">Kemanusiaan yang adil dan beradab</div>
+                    <div draggable="true" class="item" data-sila="3">Persatuan Indonesia</div>
+                    <div draggable="true" class="item" data-sila="4">Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan</div>
+                    <div draggable="true" class="item" data-sila="5">Keadilan sosial bagi seluruh rakyat Indonesia</div>
+                </div>
+                <div class="descriptions">
+                    
+                    <div class="description" data-sila="2">Menghormati dan bekerja sama dengan orang lain dengan adil.</div>
+                    <div class="description" data-sila="3">Mengutamakan persatuan dan kesatuan bangsa Indonesia.</div>
+                    <div class="description" data-sila="1">Mempercayai adanya Tuhan dan menjalankan ibadah sesuai agama dan kepercayaannya.</div>
+                    <div class="description" data-sila="5">Mewujudkan kesejahteraan yang merata bagi seluruh rakyat Indonesia.</div>
+                    <div class="description" data-sila="4">Mengutamakan musyawarah untuk mufakat dalam pengambilan keputusan.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Multiple Choice Section -->
+        <div class="section">
+            <h2>Pertanyaan Pilihan Ganda:</h2>
+            <div class="question-container">
+                <div class="question" data-question="1">
+                    <p>Siapa yang mengusulkan rumusan dasar negara yang dikenal sebagai Pancasila pada 1 Juni 1945?</p>
+                    <select class="answer">
+                        <option value="">Pilih jawaban</option>
+                        <option value="1">Soekarno</option>
+                        <option value="2">Mohammad Hatta</option>
+                        <option value="3">Muhammad Yamin</option>
+                        <option value="4">Soepomo</option>
+                    </select>
+                </div>
+                <div class="question" data-question="2">
+                    <p>Berapa jumlah sila dalam Pancasila?</p>
+                    <select class="answer">
+                        <option value="">Pilih jawaban</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fill in the Blanks Section -->
+        <div class="section">
+            <h2>Isi Kata yang Hilang:</h2>
+            <div class="fill-in-the-blanks">
+                <p>
+                    Pancasila terdiri dari ___ sila. Sila pertama berbunyi "____ yang Maha Esa". Sila kedua menekankan pentingnya ____ yang adil dan beradab. Sila ketiga mengutamakan ____ Indonesia. Sila keempat mendorong ____ yang dipimpin oleh hikmat kebijaksanaan. Sila kelima menekankan ____ sosial bagi seluruh rakyat Indonesia.
+                </p>
+                <div class="blanks">
+                    <input type="text" class="blank" data-answer="5">
+                    <input type="text" class="blank" data-answer="Ketuhanan">
+                    <input type="text" class="blank" data-answer="Kemanusiaan">
+                    <input type="text" class="blank" data-answer="Persatuan">
+                    <input type="text" class="blank" data-answer="Kerakyatan">
+                    <input type="text" class="blank" data-answer="Keadilan">
+                </div>
+            </div>
+        </div>
+
+        <button id="check-answers">Periksa Jawaban</button>
+        <p id="result"></p>
+        <div class="row">
+            <div class="col">
+                <a href="levela4.html">
+                    <button type="button" class="btn btn-warning "> &lt;&lt; Kembali </button></a>
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+                <a href="index.html">
+                    <button type="button" class="btn btn-primary fas fa-home"></button></a>
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+               
+            </div>
+        </div>
+        <div>
+            <button onclick="replay()">Replay</button>
+        </div>
+    </div>
+    <script src="logic/pl5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d66a3eaa34.js" crossorigin="anonymous"></script>
+</body>
+</html>

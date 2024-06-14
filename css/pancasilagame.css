@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow: hidden;
+    background-image: url("../images/bavk.jpg");
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 5px solid red;
+    margin-top: -300px;
+}
+
+header h1 {
+    margin-top: 20px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li {
+    position: relative;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+    width: 150px; /* Lebar submenu agar lebih rapi */
+}
+
+nav ul li:hover > .dropdown-content,
+nav ul li .dropdown-content li:hover > .dropdown-content {
+    display: block;
+}
+
+nav ul li .dropdown-content .dropdown-content {
+    top: 0;
+    left: 100%;
+    margin-left: 1px; /* Jarak antara submenu dan menu induk */
+}
+
+.dropdown {
+    width: 100px;
+    height: 30px;
+    /* border-top: 2px solid red; */
+}
+
+.dropdown #home:hover,
+.dropdown #g1:hover,
+.dropdown #g2:hover,
+.dropdown #g3:hover,
+.dropdown #g4:hover,
+.dropdown #g5:hover {
+    background-color: red;
+}
+
+.dropdown-content li a {
+    background-color: #333;
+}
+
+.dropdown-content li a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s; /* Percepat transisi hover */
+}
+#thehead h1 {
+    color: darkgoldenrod;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    margin-top: 0;
+}
+
+#panca {
+    width: 100%;
+    height: 300px;
+}
+
+#pancasila {
+    width: 100%;
+    height: 280px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#gambarpancasila {
+    width: 300px;
+    height: 300px;
+    background-image: url("../images/garuda.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* animation-name: garuda;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+    margin-top: -20px;
+}
+
+#stick {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/stick\ ps.png");
+    background-size: 100px;
+    margin-top: 100px;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#flag {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/stick\ ps.png");
+    background-size: 100px;
+    margin-top: 100px;
+    animation-name: spinback;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#homeup {
+    opacity: 0;
+    transition: 1s;
+}
+#homeup p{
+    font-size: 13px;
+}
+
+footer {
+    height: 700px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    font-size: 12px;
+    margin-top: 350px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spinback {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes garuda {
+    0% {
+        background-image: url("../images/garuda.png");
+    }
+    20%{
+        background-image: url("../images/garuda\ merah.png");
+    }
+    40%{
+        background-image: url("../images/garuda\ red\ white.png");
+    }
+    60%{
+        background-image: url("../images/pancasila\ black.png");
+    }
+    80%{
+        background-image: url("../mages/garuda\ flag.png");
+    }
+    100% {
+        background-image: url("../images/garuda\ gold.jpg");
+    }
+}

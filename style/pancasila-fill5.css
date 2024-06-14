@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+}
+
+h1 {
+    color: #333;
+}
+
+#timer {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sentence-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sentence-container input {
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid #000;
+    background-color: gold;
+}
+
+/* Ensure the fourth container fits without horizontal scrolling */
+#sila4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; /* Ensure the container takes full width */
+    gap: 10px; /* Add gap between rows */
+}
+
+#sila4 input {
+    flex: 1 1 100px; /* Adjust the base size and flex grow/shrink */
+    max-width: calc(100% / 4 - 10px); /* Make sure inputs fit without overflow */
+    margin-bottom: 10px; /* Add space below each input to separate rows */
+}
+
+#check-answers {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
